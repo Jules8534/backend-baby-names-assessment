@@ -111,11 +111,11 @@ def main(args):
         print("working on file: {}".format(filename))
         names = extract_names(filename)
         text = '\n'.join(names)
-    if create_summary:
-        with open(filename + '.summary', 'w') as outf:
-            outf.write(text + '\n')
-    else:
-        print(text)
+        if create_summary:
+            with open(filename + '.summary', 'w') as outf:
+                outf.write(text + '\n')
+        else:
+            print(text)
 
 if __name__ == '__main__':
     main(sys.argv[1:])
