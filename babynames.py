@@ -99,7 +99,7 @@ def main(args):
 
     file_list = ns.files
 
-    # option flag
+
     create_summary = ns.summaryfile
 
     # For each filename, call `extract_names` with that single file.
